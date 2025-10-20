@@ -1,0 +1,14 @@
+[project]
+name = "routemate-backend"
+version = "0.1.0"
+description = "RouteMate backend API"
+requires-python = ">=3.13.1"
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0",
+]
