@@ -1,14 +1,20 @@
 [project]
 name = "routemate-backend"
 version = "0.1.0"
-description = "RouteMate backend API"
+description = "RouteMate backend API - Community-driven bus tracker for Sri Lanka"
 requires-python = ">=3.13.1"
 dependencies = [
     "fastapi>=0.104.0",
     "uvicorn[standard]>=0.24.0",
+    "supabase>=2.0.0",
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "email-validator>=2.0.0",
 ]
 
 [dependency-groups]
 dev = [
     "pytest>=7.0",
+    "httpx>=0.24.0",
 ]
